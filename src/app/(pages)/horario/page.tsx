@@ -47,6 +47,9 @@ export default function Estagio() {
                                     ))}
                                 </tbody>
                             </table>
+                            <div>
+                                here
+                            </div>
                         </div>
                     </div>
                 </section>
