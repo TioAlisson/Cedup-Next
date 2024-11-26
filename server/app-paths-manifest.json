@@ -1,0 +1,12 @@
+{
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(pages)/cursos/[nome]/page": "app/(pages)/cursos/[nome]/page.js",
+  "/(pages)/about/page": "app/(pages)/about/page.js",
+  "/(pages)/contact/page": "app/(pages)/contact/page.js",
+  "/(pages)/editais/page": "app/(pages)/editais/page.js",
+  "/(pages)/courses/page": "app/(pages)/courses/page.js",
+  "/(pages)/estagio/page": "app/(pages)/estagio/page.js",
+  "/page": "app/page.js",
+  "/(pages)/horario/page": "app/(pages)/horario/page.js"
+}
