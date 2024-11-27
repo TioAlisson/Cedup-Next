@@ -1,0 +1,94 @@
+{
+    "documents": {
+        "editais": [
+            {
+                "edital": "Edital Concurso Público",
+                "descricao": "Edital para concurso público para cargos administrativos no setor público.",
+                "url1": "/",
+                "url2": "/"
+            },
+            {
+                "edital": "Edital de Seleção de Projetos",
+                "descricao": "Edital para seleção de projetos de pesquisa e inovação em universidades públicas.",
+                "url1": "/",
+                "url2": "/"
+            },
+            {
+                "edital": "Edital Bolsa de Estudos",
+                "descricao": "Edital para concessão de bolsas de estudos para pós-graduação no exterior.",
+                "url1": "/",
+                "url2": "/"
+            },
+            {
+                "edital": "Edital de Concurso para Ensino Fundamental",
+                "descricao": "Edital do concurso público para contratação de professores para o ensino fundamental.",
+                "url1": "/",
+                "url2": "/"
+            },
+            {
+                "edital": "Edital de Apoio a Startups",
+                "descricao": "Edital de apoio e incentivo a startups de tecnologia para financiamento de novos projetos.",
+                "url1": "/",
+                "url2": "/"
+            }
+        ],
+        "estagio": [
+            {
+                "edital": "Edital Estágio Banco",
+                "descricao": "Edital estágio Banco do Brasil para alunos do ensino superior.",
+                "url1": "/",
+                "url2": "/"
+            },
+            {
+                "edital": "Edital Estágio Técnico",
+                "descricao": "Oportunidade de estágio técnico em diversas áreas para estudantes de ensino técnico.",
+                "url1": "/",
+                "url2": "/"
+            },
+            {
+                "edital": "Estágio em Engenharia",
+                "descricao": "Vaga de estágio na área de Engenharia Civil para alunos do curso técnico e superior.",
+                "url1": "/",
+                "url2": "/"
+            },
+            {
+                "edital": "Edital Estágio de Marketing",
+                "descricao": "Vaga de estágio na área de Marketing digital para estudantes de Comunicação Social.",
+                "url1": "/",
+                "url2": "/"
+            },
+            {
+                "edital": "Estágio em Tecnologia",
+                "descricao": "Oportunidade de estágio para alunos de TI e Ciência da Computação em empresas de tecnologia.",
+                "url1": "/",
+                "url2": "/"
+            }
+        ],
+        "horario": [
+            {
+                "title": "Calendário escolar",
+                "paragraph": "Realize o download do calendário escolar, referente ao ano de 2024.",
+                "url": "https://storage.googleapis.com/production-hostgator-brasil-v1-0-3/853/1862853/t6kJ6lV6/4a5f43d6f7cc4ed8a496fe984f5a6be8?fileName=Calendario-%202024.pdf",
+                "btnParagraph": "Calendário escolar"
+            },
+            {
+                "title": "Calendário escolar",
+                "paragraph": "Realize o download do calendário escolar, referente ao ano de 2024.",
+                "url": "https://storage.googleapis.com/production-hostgator-brasil-v1-0-3/853/1862853/t6kJ6lV6/4a5f43d6f7cc4ed8a496fe984f5a6be8?fileName=Calendario-%202024.pdf",
+                "btnParagraph": "Calendário escolar"
+            },
+            {
+                "title": "Calendário escolar",
+                "paragraph": "Realize o download do calendário escolar, referente ao ano de 2024.",
+                "url": "https://storage.googleapis.com/production-hostgator-brasil-v1-0-3/853/1862853/t6kJ6lV6/4a5f43d6f7cc4ed8a496fe984f5a6be8?fileName=Calendario-%202024.pdf",
+                "btnParagraph": "Calendário escolar"
+            },
+            {
+                "title": "Calendário escolar",
+                "paragraph": "Realize o download do calendário escolar, referente ao ano de 2024.",
+                "url": "https://storage.googleapis.com/production-hostgator-brasil-v1-0-3/853/1862853/t6kJ6lV6/4a5f43d6f7cc4ed8a496fe984f5a6be8?fileName=Calendario-%202024.pdf",
+                "btnParagraph": "Calendário escolar"
+            }
+        ]
+    }
+}

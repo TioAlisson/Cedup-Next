@@ -31,11 +31,10 @@ export default function Customers() {
                         320: {
                             slidesPerView: 1, // Mostra 1 slide
                         },
-                        // Para tablets
-                        400: {
+                        768: {
                             slidesPerView: 2, // Mostra 2 slides
                         },
-                        768: {
+                        1000: {
                             slidesPerView: 3, // Mostra 3 slides
                         },
                     }}

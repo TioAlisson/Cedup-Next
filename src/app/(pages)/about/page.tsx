@@ -24,7 +24,7 @@ export default function Courses() {
                 title="Sobre o cedup"
                 backgroundImage="https://tioalisson.github.io/Projeto-Cedup.github.io/assets/img/bg-doc.svg"
             />
-            <div id='timeline' className='py-20 ps-2 border-b-4'>
+            <div id='timeline' className='py-20 ps-12 border-b-4'>
                 <div className='lg:grid lg:grid-cols-12 text-primary-400'>
                     <p className='col-start-3 col-span-12 tracking-[.35em]'>Nossa história</p>
                     <h2 className='col-start-3 col-span-12 font-bold text-3xl'>LINHA DO TEMPO</h2>
@@ -45,7 +45,7 @@ export default function Courses() {
                             openIndex={openIndex}
                             setOpenIndex={handleToggle}
                             iconOpen={faq.iconOpen}
-                            assistentes={faq.assistentes} 
+                            assistentes={faq.assistentes}
                         />
                     ))}
                 </div>
