@@ -20,7 +20,7 @@ export default function Faq({ title, alt, assistentes = {}, index, openIndex, se
     return (
         <div className="bg-sencodary-300 mb-6 rounded-t-md">
             <div className="flex items-center justify-between cursor-pointer px-4" onClick={toggleFaq}>
-                <p className="text-xl font-bold py-6 text-white">{title}</p>
+                <p className="text-xl font-bold py-6 flex items-center text-white min-h-[104px]">{title}</p>
                 <Image
                     src={iconOpen}
                     className={`duration-700 ease-in-out ${openIndex === index ? '' : 'rotate-180'}`}

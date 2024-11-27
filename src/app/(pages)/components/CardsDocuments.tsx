@@ -1,8 +1,4 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
-
-import Teste from "@/public/icon/icon-whatsapp.png"
 
 interface CardDocumentsProps {
     title: string
@@ -13,10 +9,10 @@ interface CardDocumentsProps {
 
 export default function CardDocuments({ title, paragraph, url1, url2 }: CardDocumentsProps) {
     return (
-        <div className="odd:bg-transparent even:bg-gray py-10 flex justify-center items-center flex-col px-6">
-            <h1 className="text-2xl line-clamp-1 font-bold text-sencodary-500">{title}</h1>
+        <div className="odd:bg-transparent even:bg-gray py-10 px-6">
+            <h1 className="text-2xl line-clamp-1 font-bold text-sencodary-500 text-center">{title}</h1>
             <p className="py-10 text-lg font-medium text-center">{paragraph}</p>
-            <div className="flex gap-4">
+            <div className="flex justify-center gap-4">
                 <Link href={url1}>
                     <svg
                         width="32"

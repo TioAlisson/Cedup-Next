@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import SingleBanner from '../components/SingleBanner';
 import CardDocuments from '../components/CardsDocuments';
 import Table from './components/Table';
