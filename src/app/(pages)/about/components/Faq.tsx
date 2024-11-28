@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 interface InfoFaqProps {
     title: string;
@@ -7,10 +7,11 @@ interface InfoFaqProps {
     index: number;
     openIndex: number | null;
     setOpenIndex: (index: number | null) => void;
-    iconOpen: string | StaticImageData;
 }
 
-export default function Faq({ title, alt, assistentes = {}, index, openIndex, setOpenIndex, iconOpen }: InfoFaqProps) {
+import Teste from "@/public/icon/icon-arrow-up.png"
+
+export default function Faq({ title, alt, assistentes = {}, index, openIndex, setOpenIndex }: InfoFaqProps) {
 
     // Função para alternar a abertura e fechamento da FAQ
     const toggleFaq = () => {
@@ -22,7 +23,7 @@ export default function Faq({ title, alt, assistentes = {}, index, openIndex, se
             <div className="flex items-center justify-between cursor-pointer px-4" onClick={toggleFaq}>
                 <p className="text-xl font-bold py-6 flex items-center text-white min-h-[104px]">{title}</p>
                 <Image
-                    src={iconOpen}
+                    src={Teste}
                     className={`duration-700 ease-in-out ${openIndex === index ? '' : 'rotate-180'}`}
                     alt={alt}
                     width={25}
@@ -35,7 +36,7 @@ export default function Faq({ title, alt, assistentes = {}, index, openIndex, se
                 <div className={`transition-all duration-700 ease-in-out ${openIndex === index ? 'max-h-screen' : 'max-h-0'}`}>
                     {/* Mapeando os assistentes */}
                     {Object.entries(assistentes).map(([key, assistente]) => (
-                        <p key={key} className="py-2 last:pb-8">{assistente}</p>
+                        <p key={key} className="py-2 last:pb-8">- {assistente}</p>
                     ))}
                 </div>
             </div>

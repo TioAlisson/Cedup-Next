@@ -1,0 +1,91 @@
+{
+    "faq": [
+        {
+            "title": "Assistentes de Educação",
+            "alt": "Ícone do pagamento",
+            "index": 0,
+            "assistentes": {
+                    "1": "Marisete dos Santos Borba",
+                    "2": "Franciele Aparecida da Silva",
+                    "3": "Rejane Aparecida Pagno Lemos",
+                    "4": "Patrícia Felimberti"
+            }
+        },
+        {
+            "title": "Assistentes Técnicos Pedagógicos",
+            "alt": "Ícone da entrega",
+            "index": 1,
+            "assistentes": {
+                "1": "Eliane Aparecida de Souza Weber",
+                "2": "Michelle Carlesso",
+                "3": "Rita de Cássia Nunes Ataide",
+                "4": "Valenio Antônio Parizotto"
+            }
+        },
+        {
+            "title": "Orientador Educacional",
+            "alt": "Ícone de cancelamento",
+            "index": 2,
+            "assistentes": {
+                    "1": "João Daniel Muniz Marques"
+            }
+        },
+        {
+            "title": "Supervisora escolar",
+            "alt": "Ícone de cancelamento",
+            "index": 2,
+            "assistentes": {
+                    "1": "Conceição Aparecida A. Burdzaki",
+                    "2": "Velci Muniz Vieira"
+            }
+        },
+        {
+            "title": "Associação de pais e professores (APP)",
+            "alt": "Ícone de cancelamento",
+            "index": 2,
+            "assistentes": {
+                    "1": "Presidente: Denise Paes Pereira",
+                    "2": "Vice Presidente: Juliana da Silva",
+                    "3": "Primeira Secretária: ",
+                    "4": "Segundo Secretário: Atílio Carlos Machado",
+                    "5": "Primeiro Tesoureiro:"
+            }
+        },
+        {
+            "title": "Conselho deliberativo",
+            "alt": "Ícone de cancelamento",
+            "index": 2,
+            "assistentes": {
+                    "1": "Presidente: João Daniel Muniz Marques",
+                    "2": "Vice-presidente: Thaís Pereira Souza",
+                    "3": "Secretaria: Isis Prestes de Córdova",
+                    "4": "Representante dos pais: Andreia Durigon Madruga Representante dos Estudantes: Giulia Nodary Silva Costa"
+            }
+        },
+        {
+            "title": "Projeto político pedagógico (PPP)",
+            "alt": "Ícone de cancelamento",
+            "index": 2,
+            "assistentes": {
+                    "1": "PPP O Projeto Político Pedagógico constitui-se em um processo democrático de tomada de decisões, com o objetivo de organizar o trabalho pedagógico, o qual foi iniciado em 1999 e revisado em 2000/2005/2006. Em 2007 foram constituídos grupos de estudos para revisão do referido PPP, o processo iniciou em 18/09/2007 e finalizou em 14/06/2008 com as proposições apresentadas. Entende-se que o Projeto Político Pedagógico nunca está pronto e acabado e, sim, em constante evolução. Assim, pretende-se continuar a construção de um trabalho mais eficaz e de melhor qualidade, considerado um ideal de ser humano e de sociedade, e que resultará em Projeto Político orientado de decisões, esforços e ações do conjunto de professores, técnicos administrativos, especialistas, alunos e comunidade em geral."
+            }
+        },
+        {
+            "title": "Grêmio estudantil",
+            "alt": "Ícone de cancelamento",
+            "index": 2,
+            "assistentes": {
+                    "1": "Presidente: Iasmin Ramos de Moraes",
+                    "2": "Vice-presidente: Cibele Ritter Pedroso",
+                    "3": "Secretário Geral: Gustavo Zonato",
+                    "4": "2° Secretário: Marco Antônio de Oliveira Rodrigues",
+                    "5": "Tesoureiro: Isabela Vargas Conrado",
+                    "6": "2° Tesoureiro: Sabrina Aparecida Andrade Vieira",
+                    "7": "Diretor de Imprensa: Julia de Oliveira Almeida",
+                    "8": "Diretor Cultura: Elisabete Marcon Goulart",
+                    "9": "Diretor de Esportes: William Moraes da Silva",
+                    "10": "Diretor Social: Isabelle de Lins Marques"
+            }
+        }
+    ]
+}

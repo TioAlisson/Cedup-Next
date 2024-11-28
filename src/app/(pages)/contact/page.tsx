@@ -1,6 +1,4 @@
-
 import SingleBanner from "../components/SingleBanner";
-
 import SectionAddress from "./components/FooterAddress";
 import SectionContact from "./components/FooterContact";
 
@@ -15,6 +13,5 @@ export default function Contact() {
             <SectionAddress />
             <SectionContact />
         </>
-
     );
 }

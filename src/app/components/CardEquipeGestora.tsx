@@ -5,8 +5,6 @@ interface CardEquipeGestoraProps {
     description: string
 }
 
-import IconWhats from "@/public/icon/icon-instagram-white.svg"
-
 import Image, { StaticImageData } from "next/image";
 
 export default function CardEquipeGestora({ image, alt, name, description }: CardEquipeGestoraProps) {
@@ -16,15 +14,11 @@ export default function CardEquipeGestora({ image, alt, name, description }: Car
                 <Image
                     src={image}
                     alt={alt}
-                    className="w-full h-60 object-cover"
+                    className="w-full lg:h-60 object-cover"
                 />
                 <div className="absolute flex items-center justify-center bg-zinc-900/80 w-full h-full top-0 bg-card-equipe">
                     <div>
-                        <p className="text-white">Instagram</p>
-                        <Image 
-                            src={IconWhats}
-                            alt="Medial Social Link"
-                        />
+                        <p className="text-white">Detalhes da Pessoa</p>    
                     </div>
                 </div>
             </div>

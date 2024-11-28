@@ -1,37 +1,16 @@
 import data from "@/data/dataCourses.json";
 
 // Definindo as interfaces para os dados do curso
-interface Curso {
-  image: string;
-  alt: string;
-  imageIcon: string;
-  course: string;
-  title: string;
-  typeCouse: string;
-  id: number;
-  nome: string;
-  rota: string;
-  imagePage: string;
-  imagePageAlt: string;
-  turno: string;
-  professionalProfile: string;
-  fieldOfActivity: string;
-  matrizEmiep: string;
-  btnDowload: string;
-  nameAdvisor: string;
-  emailAdvisor: string;
-  testimonials1: string;
-  student1: string;
-}
+import { Curso } from "@/app/types/typesCursos"
 
-// Tipo para os caminhos gerados
 interface Path {
   course: string;
   path: string;
+  curso: Curso;
 }
 
-export async function getLinks(): Promise<Path[]> {
-  const cursos: Curso[] = data;
+export function getLinks(): Path[] {
+  const cursos: Curso[] = data.cardsCurso; 
 
   const removeAccents = (str: string): string => {
     return str.normalize("NFD").replace(/[\u0300-\u036f|`]/g, "");
@@ -45,8 +24,11 @@ export async function getLinks(): Promise<Path[]> {
     return {
       course: curso.nome,
       path: `${courseName}-${typeCourse}`,
+      curso
     };
   });
 
   return paths;
 }
+
+

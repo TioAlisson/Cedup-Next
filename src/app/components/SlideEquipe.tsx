@@ -32,18 +32,19 @@ export default function Customers() {
                         prevEl: '.equipe-prev-button',
                     }}
                     breakpoints={{
-                        // Para telas pequenas (celular)
                         320: {
-                            slidesPerView: 1.5, // Mostra 1 slide
+                            slidesPerView: 1.5, 
                             centeredSlides: true,
                             spaceBetween: 20
                         },
-                        // Para tablets
                         400: {
-                            slidesPerView: 2, // Mostra 2 slides
+                            slidesPerView: 2, 
                         },
                         768: {
-                            slidesPerView: 4, // Mostra 2 slides
+                            slidesPerView: 3, 
+                        },
+                        1300: {
+                            slidesPerView: 4, 
                         },
                     }}
                     onSwiper={(swiper) => console.log(swiper)}

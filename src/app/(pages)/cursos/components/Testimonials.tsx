@@ -9,7 +9,7 @@ import IconMark from "@/public/icon/icon-marks.png";
 export default function Testimonials({testimonials1, student1}: TestimonialsProps) {
     return (
         <div>
-            <div className='py-16 max-w-[1280px] mx-auto'>
+            <div className='py-16 max-w-[1280px] mx-auto px-6'>
                 <h2 className='text-center text-sencodary-500 font-medium text-4xl'>
                     Depoimentos de ex-alunos
                 </h2>

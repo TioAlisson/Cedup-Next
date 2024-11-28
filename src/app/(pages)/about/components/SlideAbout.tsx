@@ -1,17 +1,15 @@
 'use client';
+
 import { Navigation, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import CardTimeline from './CardTimeline';
 
 import data from "@/data/dataTimeline.json"
+import CardTimeline from './CardTimeline';
 
-export default function Customers() {
+export default function SlideABout() {
     return (
         <div className="grid grid-cols-12 items-center">
-            <div className='col-span-12 lg:col-span-10 lg:col-start-3'>
+            <div className='col-span-12 lg:col-span-12 lg:col-start-3'>
                 <Swiper
                     modules={[Navigation, Scrollbar, A11y, Autoplay]}
                     spaceBetween={0}
@@ -27,15 +25,14 @@ export default function Customers() {
                         prevEl: '.galeria-prev-button',
                     }}
                     breakpoints={{
-                        // Para telas pequenas (celular)
                         320: {
-                            slidesPerView: 1, // Mostra 1 slide
+                            slidesPerView: 1, 
                         },
                         768: {
-                            slidesPerView: 2, // Mostra 2 slides
+                            slidesPerView: 2,
                         },
                         1000: {
-                            slidesPerView: 3, // Mostra 3 slides
+                            slidesPerView: 3,
                         },
                     }}
                     onSwiper={(swiper) => console.log(swiper)}

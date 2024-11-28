@@ -5,22 +5,10 @@ import SingleBanner from '../components/SingleBanner'
 
 import data from "@/data/dataCourses.json"
 import CardCurso from '@/app/components/CardCurso'
+import { getLinks } from '@/data/data'
+
 
 export default function Courses() {
-
-
-    function createLinkCourse(name: string, type: string): string {
-        // Normaliza e remove acentos
-        name = name.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        // Substitui espaços por hífens
-        name = name.replace(/\s+/g, '-');
-        // Converte para minúsculas
-        name = name.toLowerCase();
-
-        // Cria o link final
-        const link: string = name + '-' + type.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        return link;
-    }
 
     const [selectedOption, setSelectedOption] = useState('pos-medio')
 
@@ -31,19 +19,21 @@ export default function Courses() {
     // Filtrar cursos com base no tipo selecionado
     const filteredCourses = data.cardsCurso.filter((card) => card.typeCouse === (selectedOption === 'pos-medio' ? 'POS' : 'EMIEP'));
 
+    // Gerar os links para os cursos usando getLinks()
+    const courseLinks = getLinks(); // Aqui você chama a função getLinks que retorna o array com os paths
+
     return (
         <div>
             <SingleBanner
                 title="CURSOS"
                 backgroundImage="https://tioalisson.github.io/Projeto-Cedup.github.io/assets/img/bg-sobre.jpg"
-                
             />
             <div className="py-24 px-4 container mx-auto">
                 <div className='flex justify-end'>
                     <select
                         onChange={handleChange}
                         value={selectedOption}
-                        className="bg-white border border-gray-300 rounded-lg p-2 text-lg w-96 focus:outline-none"
+                        className="bg-white border border-gray-300 rounded-lg p-2 text-lg w-96 focus:outline-none uppercase"
                     >
                         <option value="pos-medio">Pós-médio</option>
                         <option value="emiep">EMIEP</option>
@@ -56,17 +46,27 @@ export default function Courses() {
                     </h2>
                     <div className="mt-4">
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-10 2xl:gap-2 py-16">
-                            {filteredCourses.map((card, index) => (
-                                <CardCurso
-                                    key={index}
-                                    image={card.image}
-                                    alt={card.alt}
-                                    imageIcon={card.imageIcon}
-                                    course={card.course}
-                                    title={card.title}
-                                    urlCourses={"/cursos/" + createLinkCourse(card.nome, card.typeCouse)}                                    
-                                />
-                            ))}
+                            {filteredCourses.map((card, index) => {
+                                // Encontrar o path correspondente ao curso
+                                /*
+                                    Procurando o link do curso:
+                                    A linha abaixo encontra o link do curso usando o nome e o tipo de curso.
+                                    Se o nome e o tipo do curso do card corresponderem aos valores no array 'courseLinks',
+                                    ele retorna o objeto completo, caso contrário, retorna 'undefined'.
+                                */
+                                const courseLink = courseLinks.find(link => link.course === card.nome && link.curso.typeCouse === card.typeCouse);
+                                return (
+                                    <CardCurso
+                                        key={index}
+                                        image={card.image}
+                                        alt={card.alt}
+                                        imageIcon={card.imageIcon}
+                                        course={card.course}
+                                        title={card.title}
+                                        urlCourses={courseLink ? `/cursos/${courseLink.path}` : '/'}
+                                    />
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

@@ -22,7 +22,7 @@ export default function CardCurso({ image, alt, imageIcon, course, title, urlCou
                         alt={alt}
                         width={0}
                         height={0}
-                        className="w-full h-[250px] object-cover rounded-t-md"
+                        className="w-full lg:h-[250px] object-cover rounded-t-md"
                     />
                 </div>
                 <div className="py-6 px-8">

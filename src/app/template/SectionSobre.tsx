@@ -18,11 +18,11 @@ export default function SectionSobre() {
                     </Link>
                 </div>
             </div>
-            <div className="col-span-12 lg:col-span-5 lg:col-start-8 flex items-center 2xl:items-start">
+            <div className="col-span-12 lg:col-span-5 lg:col-start-8 flex items-center 2xl:items-start relative">
                 <Image
                     src={ImageMulher}
                     alt="Mulher section sobre"
-                    className="w-full object-contain object-center"
+                    className="w-full object-contain object-center lg:absolute 2xl:static bottom-0"
                 />
             </div>
         </div>

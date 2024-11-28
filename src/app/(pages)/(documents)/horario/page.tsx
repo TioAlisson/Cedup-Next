@@ -1,10 +1,8 @@
-import Link from 'next/link';
-import SingleBanner from '../components/SingleBanner'
-import { Button } from '@/components/ui/button';
-
 import data from "@/data/dataDocuments.json"
+import SingleBanner from '../../components/SingleBanner';
 import Card from '../components/Card';
-
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function Estagio() {
 
@@ -18,7 +16,7 @@ export default function Estagio() {
             <div className='lg:container mx-auto'>
                 <div className="lg:py-20 lg:w-auto">
                     <div className="lg:container lg:mx-4">
-                        <div className='border border-primary-400/50 rounded-md overflow-hidden'>
+                        <div className='border-2 border-gray rounded-md overflow-hidden'>
                             <table className="hidden lg:inline-table lg:min-w-full lg:table-auto">
                                 <tbody>
                                     {data.documents.horario.map((item, index) => (
@@ -51,7 +49,6 @@ export default function Estagio() {
                                     title={card.title}
                                     paragraph={card.paragraph}
                                     url={card.url}
-                                    btnParagraph={card.btnParagraph}
                                 />
                             ))}
                         </div>
