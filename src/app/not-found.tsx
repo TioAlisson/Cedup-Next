@@ -19,6 +19,7 @@ export default function NotFound() {
       // setInterval é utilizado para diminuir o contador a cada 1 segundo (1000ms).
       // O contador é atualizado chamando setCounter, que decrementa o valor anterior.
       const timer = setInterval(() => {
+          // Var name = var name --
           setCounter((prevCounter) => prevCounter - 1);
       }, 1000); // O intervalo de 1000ms significa que a cada segundo o contador será decrementado.
 
