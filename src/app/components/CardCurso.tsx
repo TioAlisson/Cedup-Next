@@ -22,7 +22,7 @@ export default function CardCurso({ image, alt, imageIcon, course, title, urlCou
                         alt={alt}
                         width={0}
                         height={0}
-                        className="w-full lg:h-[250px] object-cover rounded-t-md"
+                        className="w-full h-56 lg:h-60 object-cover rounded-t-md"
                     />
                 </div>
                 <div className="py-6 px-8">
@@ -30,7 +30,7 @@ export default function CardCurso({ image, alt, imageIcon, course, title, urlCou
                         <span className="text-xl">{imageIcon}</span>
                         <span className="flex font-semibold text-xl">{course}</span>
                     </div>
-                    <p className="md:text-xl text-center lg:text-start line-clamp-2 text-primary-500">{title}</p>
+                    <p className="md:text-xl text-center lg:text-start line-clamp-2 text-primary-500 font-medium">{title}</p>
                     <div className="text-center lg:text-start">
                         <Link href={urlCourses} rel="noopener noreferrer">
                             <Button variant="btnCursos" className="mt-4">Ler mais</Button>

@@ -21,7 +21,7 @@ export default function Testimonials({testimonials1, student1}: TestimonialsProp
                     </div>
 
                     <div className='col-span-12 mt-6 lg:mt-0 lg:col-span-11'>
-                        <p className='text-sm lg:text-base flex-2'>{testimonials1}</p>
+                        <p>{testimonials1}</p>
                     </div>
                 </div>
 

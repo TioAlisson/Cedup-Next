@@ -14,7 +14,7 @@ export default function CourseDetails({curso}: CourseDetailsProps ) {
         <div>
             <SingleBanner
                 title={curso?.nome}
-                backgroundImage="https://tioalisson.github.io/Projeto-Cedup.github.io/assets/img/bg-doc.svg"
+                backgroundImage={curso.image}
             />
             <Section title="Perfil profissional">
                 {curso.professionalProfile}

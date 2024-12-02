@@ -13,7 +13,7 @@ export default function SingleBanner({
     title,
     backgroundImage,
     subtitle,
-    colorBg = "bg-zinc-950/80",
+    colorBg = "bg-zinc-900/80",
     paddingBottom = "pb-24"
 }: SingleBannerProps) {
     return (
@@ -22,7 +22,7 @@ export default function SingleBanner({
             style={{ backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined }}
         >
             <div className={`${colorBg} ${paddingBottom} pt-44 lg:pt-[270px]`}>
-                <h1 className="text-center text-white text-3xl lg:text-5xl font-bold uppercase">{title}</h1>
+                <h1 className="text-center text-white text-4xl lg:text-5xl font-bold uppercase">{title}</h1>
                 {subtitle && (
                     <p className="text-center text-sencodary-500 font-bold my-12 text-lg">
                         {subtitle}

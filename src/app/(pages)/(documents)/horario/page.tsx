@@ -24,8 +24,8 @@ export default function Estagio() {
                                             key={index}
                                             className='odd:bg-transparent even:bg-gray'
                                         >
-                                            <td className="w-auto lg:w-[30%] px-4 text-center">
-                                                <p className="text-xl lg:text-2xl text-primary-500 font-semibold">{item.title}</p>
+                                            <td className="w-auto lg:w-[30%] ps-20">
+                                                <p className="text-xl lg:text-[22px] text-primary-500 font-semibold">{item.title}</p>
                                             </td>
                                             <td className="w-auto lg:w-[50%] text-center px-4 py-8 text-lg">
                                                 <p>{item.paragraph}</p>

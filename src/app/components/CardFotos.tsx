@@ -12,7 +12,7 @@ export default function CardFotos({ image, alt, title }: CardFotosProps) {
             <Image
                 src={image}
                 alt={alt}
-                className="object-cover w-full h-64"
+                className="object-cover w-full h-52 2xl:h-64"
                 width={0} 
                 height={0} 
             />

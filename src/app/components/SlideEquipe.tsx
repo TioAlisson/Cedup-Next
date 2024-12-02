@@ -24,7 +24,7 @@ export default function Customers() {
                     scrollbar={{ draggable: true }}
                     loop={true}
                     autoplay={{
-                        delay: 5000,
+                        delay: 4000,
                         disableOnInteraction: false,
                     }}
                     navigation={{

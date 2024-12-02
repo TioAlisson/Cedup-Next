@@ -14,7 +14,7 @@ export default function CardEquipeGestora({ image, alt, name, description }: Car
                 <Image
                     src={image}
                     alt={alt}
-                    className="w-full lg:h-60 object-cover"
+                    className="w-full h-52 lg:h-60 object-cover"
                 />
                 <div className="absolute flex items-center justify-center bg-zinc-900/80 w-full h-full top-0 bg-card-equipe">
                     <div>

@@ -32,7 +32,7 @@ export default function Faq({ title, alt, assistentes = {}, index, openIndex, se
             </div>
 
             {/* Div que contém o texto explicativo da FAQ, controlada pelo estado */}
-            <div className={`overflow-hidden transition-all duration-700 ease-in-out bg-white px-4 border border-sencodary-500 ${openIndex === index ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+            <div className={`overflow-hidden transition-all duration-500 lg:duration-700 ease-in-out bg-white px-4 border border-sencodary-500 ${openIndex === index ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className={`transition-all duration-700 ease-in-out ${openIndex === index ? 'max-h-screen' : 'max-h-0'}`}>
                     {/* Mapeando os assistentes */}
                     {Object.entries(assistentes).map(([key, assistente]) => (

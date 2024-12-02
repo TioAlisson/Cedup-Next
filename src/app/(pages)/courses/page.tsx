@@ -41,7 +41,7 @@ export default function Courses() {
                 </div>
 
                 <div className="mt-8 py-10">
-                    <h2 className="text-5xl font-bold text-center uppercase text-primary-500">
+                    <h2 className="text-4xl font-bold text-center uppercase text-primary-500 leading-normal">
                         {selectedOption === 'pos-medio' ? 'CURSOS PÓS MÉDIO' : 'CURSOS EMIEP'}
                     </h2>
                     <div className="mt-4">

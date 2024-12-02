@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <SectionSlide />
-      <SectionMVV />
+      <SectionMVV showButton={true} />
       <SectionCursos />
       <SectionSobre />
       <SectionFotos />

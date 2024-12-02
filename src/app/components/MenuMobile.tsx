@@ -3,8 +3,8 @@
 interface DropdownLink {
     href: string;
     name: string;
-    dropdown: { [key: string]: string }; // Chave-valor para os itens do dropdown
-  }
+    dropdown: { [key: string]: string };
+}
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import data from "@/data/dataNavLink.json";
 import Image from "next/image";
 import LogoCedup from "@/public/img/img-logo.svg"
+import Link from "next/link";
 
 export default function MenuMobileCustom() {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,15 +37,17 @@ export default function MenuMobileCustom() {
                 <div className={`absolute top-0 right-0 !bg-[#171616]/95 p-6 shadow-lg rounded-md z-40 h-screen transition-all duration-500 ${isOpen ? 'menu menuOpen' : 'menu menuClosed'}`}
                     onClick={(e) => e.stopPropagation()}>
                     <div className="flex flex-col gap-2">
-                        <Image 
-                            src={LogoCedup}
-                            alt="Logo Cedup"
-                            className="w-4/5 pb-16"
-                        />
+                        <Link href="/">
+                            <Image
+                                src={LogoCedup}
+                                alt="Logo Cedup"
+                                className="w-4/5 pb-16"
+                            />
+                        </Link>
                         {/* Mapeando os links sem dropdown */}
                         {data.navLink.map((link, index) => (
                             link.dropdown ? null : (
-                                <a key={index} href={link.href} className="py-2 px-4  text-white">
+                                <a key={index} href={link.href} className="py-2 px-4 text-lg text-white">
                                     {link.name}
                                 </a>
                             )
@@ -73,7 +76,7 @@ function DropdownMenu({ link }: { link: DropdownLink }) {
 
     return (
         <div className="relative">
-            <a href={link.href} className="py-2 px-4  text-white flex justify-start items-center" onClick={toggleDropdown}>
+            <a href={link.href} className="py-2 px-4 text-lg text-white flex justify-start items-center" onClick={toggleDropdown}>
                 {link.name}
                 {/* Icone de seta, rotaciona quando o dropdown estiver aberto */}
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={`transition-transform duration-300 ms-2 ${isDropdownOpen ? 'rotate-180' : ''}`}>

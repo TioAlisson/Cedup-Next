@@ -11,9 +11,9 @@ export default function SectionSobre() {
             <div className="col-span-12 lg:col-span-6 w-full py-24">
                 <h3 className="text-4xl lg:text-5xl font-semibold text-center lg:text-start text-primary-500">SOBRE</h3>
                 <BorderSolid styleMargin="mx-auto lg:mx-0" />
-                <p className="py-14 text-center lg:text-start">O Projeto Político Pedagógico é um processo democrático iniciado em 1999, revisado em 2000/2005/2006 e finalizado em junho de 2008 após grupos de estudo. Ele representa uma constante evolução, visando à construção de um trabalho pedagógico mais eficaz e de melhor qualidade, orientado pela comunidade escolar.</p>
+                <p className="py-14 text-center lg:text-start text-muted-foreground text-lg font-medium leading-normal">O Projeto Político Pedagógico é um processo democrático iniciado em 1999, revisado em 2000/2005/2006 e finalizado em junho de 2008 após grupos de estudo. Ele representa uma constante evolução, visando à construção de um trabalho pedagógico mais eficaz e de melhor qualidade, orientado pela comunidade escolar.</p>
                 <div>
-                    <Link href="/" rel="noopener noreferrer" className="flex justify-center lg:justify-start">
+                    <Link href="/about" rel="noopener noreferrer" className="flex justify-center lg:justify-start">
                         <Button variant="defaulCedup">Saiba mais</Button>
                     </Link>
                 </div>

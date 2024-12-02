@@ -33,17 +33,16 @@ export default function Customers() {
                         prevEl: '.galeria-prev-button',
                     }}
                     breakpoints={{
-                        // Para telas pequenas (celular)
                         320: {
-                            slidesPerView: 1, // Mostra 1 slide
+                            slidesPerView: 1, 
                             centeredSlides: true,
                             spaceBetween: 20
                         },
                         640: {
-                            slidesPerView: 2, // Mostra 2 slides
+                            slidesPerView: 2, 
                         },
                         1024: {
-                            slidesPerView: 3, // Mostra 2 slides
+                            slidesPerView: 3, 
                         },
                     }}
                     onSwiper={(swiper) => console.log(swiper)}

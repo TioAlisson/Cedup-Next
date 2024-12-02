@@ -42,7 +42,7 @@ export default function SectionCursos() {
                     })}
                 </div>
                 <div className="text-center">
-                    <Link href="/" rel="noopener noreferrer" className="text-center">
+                    <Link href="/courses" rel="noopener noreferrer" className="text-center">
                         <Button variant="defaulCedup">Todos os cursos</Button>
                     </Link>
                 </div>

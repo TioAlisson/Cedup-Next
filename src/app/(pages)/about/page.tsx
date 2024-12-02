@@ -15,7 +15,7 @@ export default function Courses() {
                 backgroundImage="https://tioalisson.github.io/Projeto-Cedup.github.io/assets/img/bg-doc.svg"
             />
             <Timeline />
-            <SectionMVV />
+            <SectionMVV showButton={false} />
             <SectionEquipeGestora />
             <SectionMembers />
         </>
